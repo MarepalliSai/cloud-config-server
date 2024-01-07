@@ -1,0 +1,24 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+instance:
+  hostname: localhost
+
+
+  microservice:
+    Monthly-savings:
+      endpoint:
+        uri: http://MONTHLYSAVINGS-SERVICE/monthlysavings/
+
+  microservice:
+    Monthly-Expenses:
+      endpoint:
+        uri: http://MONTHLYEXPENSES-SERVICE/monthlyexpenses/
+
+   microservice:
+   Userservice:
+      endpoint:
+        uri: http://USERSERVICE-SERVICE/user/      
